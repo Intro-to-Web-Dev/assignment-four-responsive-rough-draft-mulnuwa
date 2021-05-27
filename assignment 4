@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+      
+
+        .container{
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 105px auto 15%;
+                    }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border: solid black 2px;
+            background-color: grey;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            border: solid red 2px;
+            background-image: url(../img/logo\ image.png);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            border: solid green 2px;
+            background-color: black;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 300px;
+            border: 5px solid black;
+            margin: 2% 2% 2% 2%;
+            border-radius: 15px;
+        }
+
+        .flexcontainer{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+       
+       
+           
+           
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="header"></header>
+    <main class="main flexcontainer">
+        <div class="box" style="background-image: url(../img/News.jpeg); background-position: center; background-size: cover;">NEWS</div>
+        <div class="box "style="background-image: url(../img/Characters.jpeg);background-position center; background-size: cover"  >CHARACTERS</div>
+        <div class="box" style="background-image: url(../img/Story\ image.jpeg); background-position: center; background-size: cover;">STORY</div>
+        <div class="box" style="background-image: url(../img/Main\ Events.jpeg); background-position: center; background-size: cover;">EVENTS</div>
+        <div class="box" style="background-image: url(../img/Summon.png); background-size: cover; background-position: center;">SUMMONS</div>
+        <div class="box" style="background-image: url(../img/Ticket\ Summon.png);background-position: center; background-size: cover;">TICKET SUMMONS</div>
+        <div class="box" style="background-image: url(../img/mission.png); background-size: cover; background-position: center;">MISSIONS</div>
+        <div class="box" style="background-image: url(../img/pvp.png);background-position: center;background-size: cover;">PVP</div>
+
+    </main>
+    <footer class="footer"></footer>
+</div>
+</body>
+</html>
